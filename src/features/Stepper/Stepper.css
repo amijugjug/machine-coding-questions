@@ -1,0 +1,52 @@
+.stepper-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: 0px 5px;
+}
+
+.step {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: wheat;
+}
+
+.step.active {
+    transition: all 0.3s;
+    height: 17px;
+    width: 17px;
+    border: 3px solid brown
+}
+
+.step.not-active {
+    transition: all 0.3s;
+    height: 20px;
+    width: 20px;
+    border: 0px;
+}
+
+.progress-line {
+    position: absolute;
+    height: 2px;
+    background-color: brown;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px
+}

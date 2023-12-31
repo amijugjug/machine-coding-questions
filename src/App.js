@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DroneSimulator from "./features/DroneSimulator/DroneSimulator.js";
+import InfiniteScroll from "./features/InfiniteScroll/InfiniteScroll.js";
+import Stepper from "./features/Stepper/Stepper.js";
+import TodoList from "./features/Todos/TodoList";
+
+const Example1 = () => <h4>Example 1</h4>;
+const Example2 = () => <h4>Example 2</h4>;
+const Example3 = () => <h4>Example 3</h4>;
+const Example4 = () => <h4>Example 4</h4>;
+const Example5 = () => <h4>Example 5</h4>;
 
 function App() {
+  const onNextClick = () => {
+    console.log("next click");
+  };
+  const onPreviousClick = () => {
+    console.log("previous click");
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Stepper onNextClick={onNextClick} onPreviousClick={onPreviousClick}>
+        <Example1 />
+        <Example2 />
+        <Example3 />
+        <Example4 />
+        <Example5 />
+        <Example5 />
+      </Stepper> */}
+      {/* <InfiniteScroll /> */}
+      {/* <TodoList /> */}
+      <DroneSimulator />
     </div>
   );
 }
