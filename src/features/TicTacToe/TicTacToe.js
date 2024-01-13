@@ -48,7 +48,7 @@ const Board = ({ calculateWinner, setWinner, state, setState }) => {
   );
 };
 
-export default TicTacToe = () => {
+export const TicTacToe = () => {
   const [winner, setWinner] = useState("");
   const [state, setState] = useState(Array(9).fill(null));
 

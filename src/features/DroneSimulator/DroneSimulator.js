@@ -66,6 +66,7 @@ const DroneSimulator = () => {
 
   return (
     <div className="app-container">
+      <h1>Drone Simulator</h1>
       <div className="controls-container">
         <input
           placeholder="Enter the lattitude"
@@ -97,11 +98,9 @@ const DroneSimulator = () => {
           Pause Simulation
         </button>
       </div>
-
       <div className="label">
         Current drone position : {dronePosition.lat}, {dronePosition.lng}
       </div>
-
       <div>
         <MapContainer
           center={[dronePosition.lat, dronePosition.lng]}

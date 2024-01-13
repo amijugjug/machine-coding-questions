@@ -7,7 +7,11 @@ import "./Stepper.css";
  * Button to go next or previous
  */
 
-const Stepper = ({ children, onNextClick, onPreviousClick }) => {
+const Stepper = ({
+  children,
+  onNextClick = () => null,
+  onPreviousClick = () => null,
+}) => {
   const [currentStep, setCurrentStep] = useState(0);
 
   const goNext = () => {

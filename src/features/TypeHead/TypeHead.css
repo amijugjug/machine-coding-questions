@@ -1,0 +1,48 @@
+.container {
+    position: relative;
+    width: 500px;
+}
+
+.input-box {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.input-box:focus {
+    border: 2px solid black;
+}
+
+.suggestion-container {
+    position: absolute;
+    width: 100%;
+    border: 2px solid black;
+    border-top: none;
+    max-height: 200px;
+    border-radius: 4px;
+    overflow: scroll;
+    display: none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.suggestion-container-show {
+    display: block;
+}
+
+.suggestion-item {
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.seperator-line {
+    width: 95%;
+    height: 0px;
+    border-bottom: 1px solid;
+}

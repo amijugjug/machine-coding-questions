@@ -1,0 +1,123 @@
+/* src/App.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #333;
+    border-radius: 50%;
+}
+
+.hand {
+    position: absolute;
+    height: 50%;
+    width: 2px;
+    background-color: #333;
+    transform-origin: 50% 100%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+#hour {
+    background-color: #333;
+}
+
+#minute {
+    background-color: #666;
+}
+
+#second {
+    background-color: #ff0000;
+}
+
+.center {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transform-origin: 50% 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+/* Additional styles for the clock numbers */
+.number::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: #333;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Styling for the clock numbers */
+.number:nth-child(1) {
+    transform: translate(-50%, -100%) rotate(30deg);
+}
+
+.number:nth-child(2) {
+    transform: translate(-50%, -100%) rotate(60deg);
+}
+
+.number:nth-child(3) {
+    transform: translate(-50%, -100%) rotate(90deg);
+}
+
+.number:nth-child(4) {
+    transform: translate(-50%, -100%) rotate(120deg);
+}
+
+.number:nth-child(5) {
+    transform: translate(-50%, -100%) rotate(150deg);
+}
+
+.number:nth-child(6) {
+    transform: translate(-50%, -100%) rotate(180deg);
+}
+
+.number:nth-child(7) {
+    transform: translate(-50%, -100%) rotate(210deg);
+}
+
+.number:nth-child(8) {
+    transform: translate(-50%, -100%) rotate(240deg);
+}
+
+.number:nth-child(9) {
+    transform: translate(-50%, -100%) rotate(270deg);
+}
+
+.number:nth-child(10) {
+    transform: translate(-50%, -100%) rotate(300deg);
+}
+
+.number:nth-child(11) {
+    transform: translate(-50%, -100%) rotate(330deg);
+}
+
+.number:nth-child(12) {
+    transform: translate(-50%, -100%) rotate(360deg);
+}
