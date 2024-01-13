@@ -6,7 +6,11 @@ const InfiniteScroll = () => {
   const [count, setCount] = useState(50);
 
   for (let i = 0; i < count; i++)
-    list.push(<div className="element">{i + 1}</div>);
+    list.push(
+      <div key={count} className="element">
+        {i + 1}
+      </div>
+    );
 
   useEffect(() => {
     const onScroll = () => {
