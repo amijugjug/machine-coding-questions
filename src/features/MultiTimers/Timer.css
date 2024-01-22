@@ -1,0 +1,29 @@
+.timer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 100%;
+}
+
+.status-text {
+    font-weight: bold;
+}
+
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2px;
+}
+
+.timer-btn {
+    display: block;
+    height: 20px;
+    place-items: center;
+    padding: 0;
+    font-size: 14px;
+}
+
+.divider {
+    width: 95%;
+    border-bottom: 1px solid black;
+}

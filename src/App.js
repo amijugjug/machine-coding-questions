@@ -3,8 +3,6 @@ import Header from "./components/Header.js";
 import Body from "./components/Body.js";
 import Footer from "./components/Footer.js";
 
-// import Menu from "./features/Menu";
-
 function App() {
   return (
     <div className="App">

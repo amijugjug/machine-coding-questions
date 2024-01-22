@@ -19,6 +19,9 @@ import {
   Example5,
 } from "./features/ExampleComponents/index.js";
 import { TicTacToe } from "./features/TicTacToe/TicTacToe.js";
+import { ImageCarousel } from "./features/ImageCarousel/ImageCarousel.js";
+import Landing from "./features/Landing/Landing.js";
+import MultiTimers from "./features/MultiTimers/MultiTimers.js";
 
 const appRouter = createBrowserRouter([
   { path: "/", element: <App />, errorElement: <></> },
@@ -42,6 +45,9 @@ const appRouter = createBrowserRouter([
     ),
   },
   { path: "/tic-tac-toe", element: <TicTacToe /> },
+  { path: "/image-carousel", element: <ImageCarousel /> },
+  { path: "/landing", element: <Landing /> },
+  { path: "/multi-timer", element: <MultiTimers /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

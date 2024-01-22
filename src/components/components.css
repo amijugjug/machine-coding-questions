@@ -16,6 +16,10 @@
     display: flex;
 }
 
+.header {
+    justify-content: space-between;
+}
+
 .footer {
     top: unset;
     bottom: 0;

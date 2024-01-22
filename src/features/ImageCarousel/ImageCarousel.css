@@ -1,0 +1,47 @@
+.carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel-heading {
+    text-align: start;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.image-inner-container {
+    display: flex;
+    width: fit-content;
+    transition: 1s;
+    gap: 15px;
+}
+
+.image {
+    object-fit: fill;
+    border-radius: 8px;
+    width: 700px;
+    height: 400px;
+}
+
+.control-buttons {
+    z-index: 1;
+}

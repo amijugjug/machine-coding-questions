@@ -1,0 +1,11 @@
+.item {
+    width: 100%;
+
+}
+
+.item-input {
+    width: -webkit-fill-available;
+    margin: 5px;
+    height: 40px;
+    padding: auto;
+}

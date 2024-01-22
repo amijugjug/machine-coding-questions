@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./components.css";
 import "./Body.css";
+
 const Body = () => {
   return (
     <div className="body">
@@ -14,6 +15,9 @@ const Body = () => {
         <Link to="type-head">Type Head</Link>
         <Link to="stepper">Stepper</Link>
         <Link to="tic-tac-toe">Tic-Tac-Toe Game</Link>
+        <Link to="image-carousel">Image Carousel</Link>
+        <Link to="landing">Register/Login</Link>
+        <Link to="multi-timer">Multi Timer</Link>
       </div>
     </div>
   );
