@@ -1,5 +1,3 @@
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 const squareElement = (ele) => {
   return ele * ele;
 };
@@ -54,6 +52,21 @@ Array.prototype.myForEach = function (cbF) {
   }
 };
 
+Array.prototype.myFlat = function (depth = 1) {
+  const context = this;
+  const result = [];
+  for (let i = 0; i < context.length; i++) {
+    if (Array.isArray(context[i]) && depth > 0) {
+      result.push(...context[i].myFlat(depth - 1));
+    } else {
+      result.push(context[i]);
+    }
+  }
+  return result;
+};
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 const sqArray = array.myMap(squareElement);
 console.log("sqArray : ", sqArray);
 
@@ -64,3 +77,13 @@ const sumOfElements = array.myReduce(sum);
 console.log("sumOfElements: ", sumOfElements);
 
 array.myForEach(printArray);
+
+const arr = [
+  [1, 2],
+  [3, 4],
+  [6, [7, 8], 9],
+];
+
+const res = arr.myFlat(2);
+
+console.log("res : ", res);
