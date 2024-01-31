@@ -9,7 +9,6 @@ const Body = () => {
     <div className="body">
       <div className="link-section">
         <Link to="infinite-scroll">Infinite Scroll</Link>
-        <Link to="todo-list">Todo List</Link>
         <Link to="drone-simulator">Drone Simulator</Link>
         <Link to="analog-clock">Analog Clock</Link>
         <Link to="type-head">Type Head</Link>

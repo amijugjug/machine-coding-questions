@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import InfiniteScroll from "./features/InfiniteScroll/InfiniteScroll.js";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import TodoList from "./features/Todos/TodoList.js";
 import DroneSimulator from "./features/DroneSimulator/DroneSimulator.js";
 import AnalogClock from "./features/AnalogClock/AnalogClock.js";
 import TypeHead from "./features/TypeHead/TypeHead.js";
@@ -27,7 +26,6 @@ import FolderStructureCall from "./features/FolderStructure/index.js";
 const appRouter = createBrowserRouter([
   { path: "/", element: <App />, errorElement: <></> },
   { path: "/infinite-scroll", element: <InfiniteScroll /> },
-  { path: "/todo-list", element: <TodoList /> },
   { path: "/drone-simulator", element: <DroneSimulator /> },
   { path: "/analog-clock", element: <AnalogClock /> },
   { path: "/type-head", element: <TypeHead /> },
