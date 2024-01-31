@@ -18,6 +18,7 @@ const Body = () => {
         <Link to="image-carousel">Image Carousel</Link>
         <Link to="landing">Register/Login</Link>
         <Link to="multi-timer">Multi Timer</Link>
+        <Link to="folder-structure">Folder Structure</Link>
       </div>
     </div>
   );
