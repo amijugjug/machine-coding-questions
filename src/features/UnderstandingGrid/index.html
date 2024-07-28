@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout Examples</title>
+    <style>
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /* Using fractional units */
+            grid-template-rows: 100px 200px;
+            grid-gap: 10px; /* Setting gaps between rows and columns */
+            justify-items: center; /* Horizontal alignment of items */
+            align-items: center; /* Vertical alignment of items */
+        }
+
+        /* Grid Areas */
+        .grid-template-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            grid-template-areas:
+                "header header header"
+                "sidebar content content";
+            grid-gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: lightcoral;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightseagreen;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* Repeat Function */
+        .repeat-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            grid-gap: 10px;
+            justify-content: center; /* Horizontal alignment of the grid */
+            align-content: center; /* Vertical alignment of the grid */
+        }
+
+        /* Auto-Fill and Auto-Fit */
+        .auto-fill-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-gap: 10px;
+        }
+
+        .auto-fit-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-gap: 10px;
+        }
+
+        /* Responsive Design */
+        .responsive-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .responsive-item {
+            background-color: lightblue;
+        }
+
+        @media (max-width: 600px) {
+            .responsive-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Additional styling for demo purposes */
+        .grid-item {
+            background-color: lightgray;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Grid Layout Examples</h1>
+
+    <h2>Basic Grid Container</h2>
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+    </div>
+
+    <h2>Grid Template Areas</h2>
+    <div class="grid-template-container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+    </div>
+
+    <h2>Repeat Function</h2>
+    <div class="repeat-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+    </div>
+
+    <h2>Auto-Fill</h2>
+    <div class="auto-fill-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+    </div>
+
+    <h2>Auto-Fit</h2>
+    <div class="auto-fit-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+    </div>
+
+    <h2>Responsive Design</h2>
+    <div class="responsive-container">
+        <div class="responsive-item">Responsive Item 1</div>
+        <div class="responsive-item">Responsive Item 2</div>
+        <div class="responsive-item">Responsive Item 3</div>
+        <div class="responsive-item">Responsive Item 4</div>
+    </div>
+
+</body>
+</html>
