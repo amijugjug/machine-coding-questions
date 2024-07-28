@@ -1,0 +1,32 @@
+#game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 40px;
+  width: 100vw;
+}
+
+#score {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  align-content: center;
+  width: 620px;
+  border: 1px solid red;
+}
+
+#container div {
+  width: 60px;
+  height: 60px;
+}
+
+#roll-dice-button {
+  max-width: 150px;
+}
