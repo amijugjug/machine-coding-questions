@@ -1,5 +1,6 @@
 /* eslint-disable no-extend-native */
 Function.prototype.myCall = function (context = {}, ...args) {
+  // Here this is the current function
   if (typeof this !== "function") throw new Error("It is not a function");
   context.fn = this;
   context.fn(args);
@@ -15,9 +16,9 @@ Function.prototype.myApply = function (context = {}, args = []) {
   context.fn(args);
 };
 
-Function.prototype.myBind = function (...outerArgs) {
-  const context = this;
-  return function (...innerArgs) {
-    context.apply(outerArgs[0], [...outerArgs.slice(1), ...innerArgs]);
-  };
-};
+Function.prototype.mybind = function(context={}, ...outerArgs){
+  const thisFunc = this;
+  return function(...innerArgs){
+      thisFunc.apply(context, [...outerArgs, ...innerArgs]);
+  }
+}

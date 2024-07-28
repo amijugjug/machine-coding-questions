@@ -1,3 +1,4 @@
+/* eslint-disable no-extend-native */
 const squareElement = (ele) => {
   return ele * ele;
 };
